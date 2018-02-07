@@ -228,13 +228,19 @@ function insertProductLine(tableId, groupId)
     currencyFields.push("product_product_total_price" + prodln);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   var h = x.insertCell(9);
   h.innerHTML = "<input type='hidden' name='product_currency[" + prodln + "]' id='product_currency" + prodln + "' value=''><input type='hidden' name='product_deleted[" + prodln + "]' id='product_deleted" + prodln + "' value='0'><input type='hidden' name='product_id[" + prodln + "]' id='product_id" + prodln + "' value=''><button type='button' id='product_delete_line" + prodln + "' class='button product_delete_line' value='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "' tabindex='116' onclick='markLineDeleted(" + prodln + ",\"product_\")'><span class=\"suitepicon suitepicon-action-clear\"></span></button><br>";
 =======
+=======
+>>>>>>> d9831685d... Calculate list price according to cost and utility values
   var j = y.insertCell(7);
   j.style.color="rgb(68,68,68)";
   j.innerHTML = '&nbsp;';
   j.innerHTML += "<input type='hidden' name='product_currency[" + prodln + "]' id='product_currency" + prodln + "' value=''><input type='hidden' name='product_deleted[" + prodln + "]' id='product_deleted" + prodln + "' value='0'><input type='hidden' name='product_id[" + prodln + "]' id='product_id" + prodln + "' value=''><button type='button' id='product_delete_line" + prodln + "' class='button product_delete_line' value='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "' tabindex='116' onclick='markLineDeleted(" + prodln + ",\"product_\")'><img src='themes/"+SUGAR.themes.theme_name+"/images/id-ff-clear.png' alt='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "'></button><br>";
+<<<<<<< HEAD
+>>>>>>> d9831685d... Calculate list price according to cost and utility values
+=======
 >>>>>>> d9831685d... Calculate list price according to cost and utility values
 
 
@@ -432,14 +438,20 @@ function insertServiceLine(tableId, groupId)
     currencyFields.push("service_product_total_price" + servln);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   var f = x.insertCell(6);
   f.innerHTML = "<input type='hidden' name='service_deleted[" + servln + "]' id='service_deleted" + servln + "' value='0'><input type='hidden' name='service_id[" + servln + "]' id='service_id" + servln + "' value=''><button type='button' class='button service_delete_line' id='service_delete_line" + servln + "' value='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "' tabindex='116' onclick='markLineDeleted(" + servln + ",\"service_\")'><span class=\"suitepicon suitepicon-action-clear\"></span></button><br>";
 =======
+=======
+>>>>>>> d9831685d... Calculate list price according to cost and utility values
 
   var j = y.insertCell(7);
   j.style.color="rgb(68,68,68)";
   j.innerHTML='&nbsp;';
   j.innerHTML = "<input type='hidden' name='service_deleted[" + servln + "]' id='service_deleted" + servln + "' value='0'><input type='hidden' name='service_id[" + servln + "]' id='service_id" + servln + "' value=''><button type='button' class='button service_delete_line' id='service_delete_line" + servln + "' value='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "' tabindex='116' onclick='markLineDeleted(" + servln + ",\"service_\")'><img src='themes/"+SUGAR.themes.theme_name+"/images/id-ff-clear.png' alt='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "'></button><br>";
+<<<<<<< HEAD
+>>>>>>> d9831685d... Calculate list price according to cost and utility values
+=======
 >>>>>>> d9831685d... Calculate list price according to cost and utility values
 
   addAlignedLabels(servln, 'service');
