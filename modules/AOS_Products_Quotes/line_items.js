@@ -184,12 +184,21 @@ function insertProductLine(tableId, groupId)
   d.innerHTML = "<span style='vertical-align: top;' class='product_product_utility_label'>" + SUGAR.language.get(module_sugar_grp1, 'LBL_PRODUCT_UTILITY') + " :&nbsp;&nbsp;</span><br />";
   d.innerHTML += "<input type='text' name='product_product_utility[" + prodln + "]' id='product_product_utility" + prodln + "'  maxlength='50' value='' title='' tabindex='116' onblur='calculateLine(" + prodln + ",\"product_\");' onblur='calculateLine(" + prodln + ",\"product_\");' class='product_product_utility'><input type='hidden' name='product_product_utility_amount[" + prodln + "]' id='product_product_utility_amount" + prodln + "' value=''  />";
   d.innerHTML += "<select tabindex='116' name='product_utility[" + prodln + "]' id='product_utility" + prodln + "' onchange='calculateLine(" + prodln + ",\"product_\");' class='product_utility_amount_select'>" + utility_hidden + "</select>";
+<<<<<<< HEAD
 
   var e = y.insertCell(2);
   e.style.color="rgb(68,68,68)";
   e.innerHTML = "<span style='vertical-align: top;' class='product_product_list_price_label'>" + SUGAR.language.get(module_sugar_grp1, 'LBL_LIST_PRICE') + " :&nbsp;&nbsp;</span><br />";
   e.innerHTML += "<input type='text' name='product_product_list_price[" + prodln + "]' id='product_product_list_price" + prodln + "' maxlength='50' value='' title='' tabindex='116' readonly='readonly' onblur='calculateLine(" + prodln + ",\"product_\");' class='product_list_price'>";
 
+=======
+
+  var e = y.insertCell(2);
+  e.style.color="rgb(68,68,68)";
+  e.innerHTML = "<span style='vertical-align: top;' class='product_product_list_price_label'>" + SUGAR.language.get(module_sugar_grp1, 'LBL_LIST_PRICE') + " :&nbsp;&nbsp;</span><br />";
+  e.innerHTML += "<input type='text' name='product_product_list_price[" + prodln + "]' id='product_product_list_price" + prodln + "' maxlength='50' value='' title='' tabindex='116' readonly='readonly' onblur='calculateLine(" + prodln + ",\"product_\");' class='product_list_price'>";
+
+>>>>>>> d9831685d... Calculate list price according to cost and utility values
   if (typeof currencyFields !== 'undefined') {
     currencyFields.push("product_product_list_price" + prodln);
 //    currencyFields.push("product_product_cost_price" + prodln);
@@ -229,9 +238,12 @@ function insertProductLine(tableId, groupId)
   }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   var h = x.insertCell(9);
   h.innerHTML = "<input type='hidden' name='product_currency[" + prodln + "]' id='product_currency" + prodln + "' value=''><input type='hidden' name='product_deleted[" + prodln + "]' id='product_deleted" + prodln + "' value='0'><input type='hidden' name='product_id[" + prodln + "]' id='product_id" + prodln + "' value=''><button type='button' id='product_delete_line" + prodln + "' class='button product_delete_line' value='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "' tabindex='116' onclick='markLineDeleted(" + prodln + ",\"product_\")'><span class=\"suitepicon suitepicon-action-clear\"></span></button><br>";
 =======
+=======
+>>>>>>> d9831685d... Calculate list price according to cost and utility values
 =======
 >>>>>>> d9831685d... Calculate list price according to cost and utility values
   var j = y.insertCell(7);
@@ -239,6 +251,9 @@ function insertProductLine(tableId, groupId)
   j.innerHTML = '&nbsp;';
   j.innerHTML += "<input type='hidden' name='product_currency[" + prodln + "]' id='product_currency" + prodln + "' value=''><input type='hidden' name='product_deleted[" + prodln + "]' id='product_deleted" + prodln + "' value='0'><input type='hidden' name='product_id[" + prodln + "]' id='product_id" + prodln + "' value=''><button type='button' id='product_delete_line" + prodln + "' class='button product_delete_line' value='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "' tabindex='116' onclick='markLineDeleted(" + prodln + ",\"product_\")'><img src='themes/"+SUGAR.themes.theme_name+"/images/id-ff-clear.png' alt='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "'></button><br>";
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d9831685d... Calculate list price according to cost and utility values
+=======
 >>>>>>> d9831685d... Calculate list price according to cost and utility values
 =======
 >>>>>>> d9831685d... Calculate list price according to cost and utility values
@@ -396,12 +411,21 @@ function insertServiceLine(tableId, groupId)
   d.innerHTML = "<span style='vertical-align: top;' class='service_product_utility'>" + SUGAR.language.get(module_sugar_grp1, 'LBL_SERVICE_UTILITY') + " :&nbsp;&nbsp;</span><br />";
   d.innerHTML += "<input type='text' name='service_product_utility[" + servln + "]' id='service_product_utility" + servln + "'  maxlength='50' value='' title='' tabindex='116' onblur='calculateLine(" + servln + ",\"service_\");' onblur='calculateLine(" + servln + ",\"service_\");' class='service_product_utility'><input type='hidden' name='service_product_utility_amount[" + servln + "]' id='service_product_utility_amount" + servln + "' value=''  />";
   d.innerHTML += "<select tabindex='116' name='service_utility[" + servln + "]' id='service_utility" + servln + "' onchange='calculateLine(" + servln + ",\"service_\");' class='service_utility_amount_select'>" + utility_hidden + "</select>";
+<<<<<<< HEAD
 
   var e = y.insertCell(2);
   e.style.color="rgb(68,68,68)";
   e.innerHTML = SUGAR.language.get(module_sugar_grp1, 'LBL_SERVICE_LIST_PRICE') + " :&nbsp;&nbsp;</span><br />";
   e.innerHTML += "<input type='text' name='service_product_list_price[" + servln + "]' id='service_product_list_price" + servln + "' maxlength='50' value='' title='' tabindex='116' readonly='readonly' onblur='calculateLine(" + servln + ",\"service_\");' class='service_list_price'>";
 
+=======
+
+  var e = y.insertCell(2);
+  e.style.color="rgb(68,68,68)";
+  e.innerHTML = SUGAR.language.get(module_sugar_grp1, 'LBL_SERVICE_LIST_PRICE') + " :&nbsp;&nbsp;</span><br />";
+  e.innerHTML += "<input type='text' name='service_product_list_price[" + servln + "]' id='service_product_list_price" + servln + "' maxlength='50' value='' title='' tabindex='116' readonly='readonly' onblur='calculateLine(" + servln + ",\"service_\");' class='service_list_price'>";
+
+>>>>>>> d9831685d... Calculate list price according to cost and utility values
   if (typeof currencyFields !== 'undefined') {
     currencyFields.push("service_product_list_price" + servln);
   }
@@ -439,9 +463,12 @@ function insertServiceLine(tableId, groupId)
   }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   var f = x.insertCell(6);
   f.innerHTML = "<input type='hidden' name='service_deleted[" + servln + "]' id='service_deleted" + servln + "' value='0'><input type='hidden' name='service_id[" + servln + "]' id='service_id" + servln + "' value=''><button type='button' class='button service_delete_line' id='service_delete_line" + servln + "' value='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "' tabindex='116' onclick='markLineDeleted(" + servln + ",\"service_\")'><span class=\"suitepicon suitepicon-action-clear\"></span></button><br>";
 =======
+=======
+>>>>>>> d9831685d... Calculate list price according to cost and utility values
 =======
 >>>>>>> d9831685d... Calculate list price according to cost and utility values
 
@@ -450,6 +477,9 @@ function insertServiceLine(tableId, groupId)
   j.innerHTML='&nbsp;';
   j.innerHTML = "<input type='hidden' name='service_deleted[" + servln + "]' id='service_deleted" + servln + "' value='0'><input type='hidden' name='service_id[" + servln + "]' id='service_id" + servln + "' value=''><button type='button' class='button service_delete_line' id='service_delete_line" + servln + "' value='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "' tabindex='116' onclick='markLineDeleted(" + servln + ",\"service_\")'><img src='themes/"+SUGAR.themes.theme_name+"/images/id-ff-clear.png' alt='" + SUGAR.language.get(module_sugar_grp1, 'LBL_REMOVE_PRODUCT_LINE') + "'></button><br>";
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d9831685d... Calculate list price according to cost and utility values
+=======
 >>>>>>> d9831685d... Calculate list price according to cost and utility values
 =======
 >>>>>>> d9831685d... Calculate list price according to cost and utility values
